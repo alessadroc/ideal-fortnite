@@ -1,8 +1,11 @@
-# React + Vite
+# Fortnite Loot Pool Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Fortnite Loot Pool Maker!
 
-Currently, two official plugins are available:
+This is an open-source web application intended for Fortnite Battle Royale players.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It's to visualise their ideal choices for what guns should and should not be available in Battle Royale.
+
+All images of weapons are to be stored in assets, and all styling is to be kept index.css.
+
+Happy coding!

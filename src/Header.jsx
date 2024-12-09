@@ -2,7 +2,7 @@
 
 function Header() {
     return(<>
-        <h1>Create your ideal Fortnite Loot Pool!</h1>
+        <h1>Create your ideal Fortnite Battle Royale Loot Pool!</h1>
     </>);
 }
 

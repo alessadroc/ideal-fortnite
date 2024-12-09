@@ -2,6 +2,8 @@ h1 {
   font-family: "Arial";
   text-align: center;
   background-color: orange;
+  border:black 3px;
+  border-style: solid;
 }
 
 h2, a {
