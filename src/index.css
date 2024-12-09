@@ -5,12 +5,10 @@ body, html {
 
 h1 {
   font-family: "Arial";
-  text-align: center;
 }
 
 h2, a {
   font-family: "Arial";
-  text-align: center;
 }
 
 table {
@@ -46,6 +44,15 @@ img {
   padding-bottom: 100px;
 }
 
+.card {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+}
+
 .contactLinks {
   font-family: Arial;
   color:rgb(0, 68, 255);
@@ -63,4 +70,14 @@ img {
   margin: 0;
   padding: 20px 0; /* Adjust padding for desired spacing */
   color: white;
+  text-align: center;
+}
+
+.footerDIV {
+  margin-top: auto;
+  color: white;
+  background-color: hsl(0, 0%, 70%);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }

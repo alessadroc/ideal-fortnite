@@ -30,7 +30,7 @@ function AllWeapons() {
     };
 
     return (
-        <>
+        <div class="card">
             <table>
                 <tr>
                     <td>Assault Rifles</td>
@@ -112,7 +112,7 @@ function AllWeapons() {
                     <button onClick={handleRemoveClick}>Clear</button>
                 </div>
             )}
-        </>
+        </div>
     );
 }
 
