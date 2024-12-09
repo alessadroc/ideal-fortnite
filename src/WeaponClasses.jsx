@@ -3,7 +3,7 @@
 function WeaponClasses() {
     return(
         <>
-        <h1>Your Loot Pool</h1>
+        <h2>Your Loot Pool</h2>
         </>
     )
 }

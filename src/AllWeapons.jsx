@@ -49,6 +49,7 @@ function AllWeapons() {
                             <option value="none">None</option>
                             <option value="huntingRifle">Hunting Rifle</option>
                             <option value="boltAction">Bolt-Action Sniper Rifle</option>
+                            <option value="heavySniper">Heavy Sniper Rifle</option>
                         </select>
                     </td>
                 </tr>
@@ -58,6 +59,7 @@ function AllWeapons() {
                         <select name="pistols" id="pistolDropdown">
                             <option value="none">None</option>
                             <option value="pistol">Pistol</option>
+                            <option value="supressedPistol">Supressed Pistol</option>
                             <option value="handCannon">Hand Cannon</option>
                         </select>
                     </td>

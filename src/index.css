@@ -1,4 +1,10 @@
-h1, h2, a {
+h1 {
+  font-family: "Arial";
+  text-align: center;
+  background-color: orange;
+}
+
+h2, a {
   font-family: "Arial";
   text-align: center;
 }
@@ -17,6 +23,23 @@ td:first-child {
   padding-bottom: 100px;
 }
 
+button {
+  width: 300px;
+  font-family: Arial;
+  border: 1px;
+  display: block;
+  margin: auto;
+}
+
 select {
   width: 200px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+div {
+  padding-left: 20px;
 }

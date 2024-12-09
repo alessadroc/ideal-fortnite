@@ -3,6 +3,7 @@ import Footer from "./Footer.jsx"
 import WeaponClasses from "./WeaponClasses.jsx"
 import AllWeapons from "./AllWeapons.jsx"
 import AllConsumables from "./AllConsumables.jsx"
+import LootPool from "./LootPool.jsx"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <WeaponClasses></WeaponClasses>
       <AllWeapons></AllWeapons>
       <AllConsumables></AllConsumables>
+      <LootPool></LootPool>
       <Footer></Footer>
     </>
   )
