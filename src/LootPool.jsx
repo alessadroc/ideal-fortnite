@@ -1,43 +1,40 @@
-import React, {useState} from 'react';
+import React from 'react';
+import assaultRifleImg from './assets/assaultRifle.png';
+import pumpShotgunImg from './assets/pumpShotgun.png';
+import tacticalShotgunImg from './assets/tacticalShotgun.png';
+import combatShotgunImg from './assets/combatShotgun.png';
 
-function LootPool() {
+// Image import or URL mapping
+const lootImages = {
+  assaultRifle: assaultRifleImg,
+  pumpShotgun: pumpShotgunImg,
+  tacticalShotgun: tacticalShotgunImg,
+  combatShotgun: combatShotgunImg,
+  none: null,
+};
 
-    const [showImages, setShowImages] = useState(false);
-
-    const handleShowClick = () => {
-        setShowImages(true); // Set state to true to show images
-    };
-
-    const handleRemoveClick = () => {
-        setShowImages(false); // Set state to FALSE to stop the show of images
-    };
-
-    return (
-        <>
-            <button onClick={handleShowClick}>Create Loot Pool!</button>
-
-            {showImages && (
-                <>
-                    <div>
-                        <img src="assaultRifle.png" alt="Assault Rifle" />
-                        <img src="pumpShotgun.png" alt="Pump Shotgun" />
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <td>
-                                    <button onClick={handleRemoveClick}>Clear</button>
-                                </td>
-                                <td>
-                                    <button>Save Pool</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </>
-            )}
-        </>
-    );
+function LootPool({
+  assaultRifle,
+  shotgun,
+  submachineGun,
+  sniper,
+  pistol,
+  showImages,
+}) {
+  return (
+    <>
+      {showImages && (
+        <div>
+          {/* Conditionally render images based on selected values */}
+          {assaultRifle !== "none" && <img src={lootImages[assaultRifle]} alt="Assault Rifle" />}
+          {shotgun !== "none" && <img src={lootImages[shotgun]} alt="Shotgun" />}
+          {submachineGun !== "none" && <img src={lootImages[submachineGun]} alt="Submachine Gun" />}
+          {sniper !== "none" && <img src={lootImages[sniper]} alt="Sniper" />}
+          {pistol !== "none" && <img src={lootImages[pistol]} alt="Pistol" />}
+        </div>
+      )}
+    </>
+  );
 }
 
 export default LootPool;
