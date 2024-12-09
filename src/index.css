@@ -38,6 +38,8 @@ select {
 img {
   width: 100px;
   height: 100px;
+  padding: 5px;
+  background-color: hsl(0, 0%, 100%);
 }
 
 div {
