@@ -62,26 +62,6 @@ function AllWeapons() {
                         </select>
                     </td>
                 </tr>
-                <tr>
-                    <td>Shields</td>
-                    <td>
-                        <select name="shields" id="shieldDropdown">
-                            <option value="none">None</option>
-                            <option value="smallShieldPotion">Small Shield Potion</option>
-                            <option value="shieldPotion">Shield Potion</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Health</td>
-                    <td>
-                        <select name="health" id="healthDropdown">
-                            <option value="none">None</option>
-                            <option value="bandage">Bandage</option>
-                            <option value="medkit">Medkit</option>
-                        </select>
-                    </td>
-                </tr>
             </table>
         </>
     );
