@@ -1,9 +1,11 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: "Arial";
   text-align: center;
-  background-color: orange;
-  border:black 3px;
-  border-style: solid;
 }
 
 h2, a {
@@ -18,11 +20,6 @@ table {
 
 td:first-child {
   width: 200px;
-}
-
-.lootPool {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 button {
@@ -44,11 +41,26 @@ img {
   background-color: hsl(0, 0%, 100%);
 }
 
-div {
-  padding-left: 20px;
+.lootPool {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .contactLinks {
   font-family: Arial;
   color:rgb(0, 68, 255);
+  padding-left: 50px;
+}
+
+.headerDIV {
+  background-color: hsl(0, 0%, 34%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.headerDIV h1 {
+  margin: 0;
+  padding: 20px 0; /* Adjust padding for desired spacing */
+  color: white;
 }
