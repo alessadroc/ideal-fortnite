@@ -1,3 +1,18 @@
-body {
+h1, h2, a {
   font-family: "Arial";
+  text-align: center;
+}
+
+table {
+  font-family: "Arial";
+  text-align: left;
+}
+
+.lootPool {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+select {
+  width: 200px;
 }

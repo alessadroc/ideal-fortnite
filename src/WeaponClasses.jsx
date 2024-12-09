@@ -3,7 +3,9 @@
 function WeaponClasses() {
     return(
         <>
-            <h1>Weapon Classes Go Here</h1>
+        <h1>Your Loot Pool</h1>
+            <div className="lootPool">
+            </div>
         </>
     )
 }
