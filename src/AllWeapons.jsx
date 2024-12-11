@@ -8,6 +8,7 @@ function AllWeapons() {
     const [sniper, setSniper] = useState("none");
     const [pistol, setPistol] = useState("none");
     const [showImages, setShowImages] = useState(false);
+    const [consumable, setConsumable] = useState("none");
 
     // Update state based on dropdown selection
     const handleChange = (e) => {
@@ -17,6 +18,8 @@ function AllWeapons() {
         if (name === 'submachineGuns') setSubmachineGun(value);
         if (name === 'snipers') setSniper(value);
         if (name === 'pistols') setPistol(value);
+        if (name === 'consumables') setConsumable(value);
+
     };
 
     // Handle showing the loot pool
@@ -92,6 +95,19 @@ function AllWeapons() {
                         </select>
                     </td>
                 </tr>
+                <tr>
+                    <td>Consumables</td>
+                        <td>
+                            <select name="consumables" value={consumable} onChange={handleChange}>
+                            <option value="none">None</option>
+                            <option value="shieldPotion">Shield Potion</option>
+                            <option value="slurpJuice">Slurp Juice</option>
+                            <option value="medkit">Medkit</option>
+                            <option value="bandages">Bandages</option>
+                            </select>
+                        </td>
+                </tr>
+
             </table>
 
             {/* Button to trigger the loot pool display */}
