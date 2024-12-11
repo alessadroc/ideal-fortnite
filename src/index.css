@@ -30,11 +30,11 @@ h1 {
 }
 
 h2, a {
-  font-family: "Arial";
+  font-family: "Burbank", sans-serif;
 }
 
 table {
-  font-family: "Arial";
+  font-family: "Burbank", sans-serif;
   text-align: left;
 }
 
@@ -45,16 +45,17 @@ td:first-child {
 button {
   width: 300px;
   height: 25px;
-  font-family: Arial;
+  font-family: "Burbank", sans-serif;
   border: 1px;
   display: block;
   margin: auto;
   background-color: #f3af19;
+  border-radius: 10px;
 }
 
 button:hover {
   width: 300px;
-  font-family: Arial;
+  font-family: "Burbank", sans-serif;
   border: 1px;
   display: block;
   margin: auto;

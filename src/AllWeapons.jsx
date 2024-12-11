@@ -7,8 +7,8 @@ function AllWeapons() {
     const [submachineGun, setSubmachineGun] = useState("none");
     const [sniper, setSniper] = useState("none");
     const [pistol, setPistol] = useState("none");
-    const [showImages, setShowImages] = useState(false);
     const [consumable, setConsumable] = useState("none");
+    const [showImages, setShowImages] = useState(false);
 
     // Update state based on dropdown selection
     const handleChange = (e) => {
@@ -24,12 +24,34 @@ function AllWeapons() {
 
     // Handle showing the loot pool
     const handleShowClick = () => {
-        setShowImages(true);
+        if (hasSelections()) {
+            setShowImages(true);
+        } else {
+            alert("Please select at least one item before creating the loot pool!");
+            return;
+        }
     };
 
     // Handle clearing the loot pool
     const handleRemoveClick = () => {
+        setAssaultRifle("none");
+        setShotgun("none");
+        setSubmachineGun("none");
+        setSniper("none");
+        setPistol("none");
+        setConsumable('none');
         setShowImages(false);
+    };
+
+    const hasSelections = () => {
+        return (
+            assaultRifle !== "none" ||
+            shotgun !== "none" ||
+            submachineGun !== "none" ||
+            sniper !== "none" ||
+            pistol !== "none" ||
+            consumable !== "none"
+        );
     };
 
     return (
@@ -125,7 +147,7 @@ function AllWeapons() {
                 showImages={showImages}
             />
 
-            {showImages && (
+            {hasSelections() && (
                 <div>
                     <button onClick={handleRemoveClick}>Clear</button>
                 </div>
