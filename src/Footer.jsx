@@ -4,8 +4,11 @@ function Footer() {
     return(
     <div class="footerDIV">
         <h2>Contribute</h2>
-        <a href="https://github.com/alessadroc/ideal-fortnite" target="_blank" className="contactLinks">Github</a>
-        <a href="#" target="_blank" className="contactLinks">Send a Dollar</a>
+        <ul class="footerList">
+            <li>
+                <a href="https://github.com/alessadroc/ideal-fortnite" target="_blank"><img class="contactLogo" src="src\assets\githubLogo.png"></img></a>
+            </li>
+        </ul>
     </div>
     )
 }

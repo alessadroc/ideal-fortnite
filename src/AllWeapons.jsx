@@ -81,6 +81,7 @@ function AllWeapons() {
                             <option value="huntingRifle">Hunting Rifle</option>
                             <option value="boltAction">Bolt-Action Sniper Rifle</option>
                             <option value="heavySniper">Heavy Sniper Rifle</option>
+                            <option value="semiAutoSniper">Semi-Auto Sniper</option>
                         </select>
                     </td>
                 </tr>
@@ -120,6 +121,7 @@ function AllWeapons() {
                 submachineGun={submachineGun}
                 sniper={sniper}
                 pistol={pistol}
+                consumable={consumable}
                 showImages={showImages}
             />
 

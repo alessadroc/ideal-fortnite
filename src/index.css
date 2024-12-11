@@ -66,12 +66,6 @@ img {
   display: inline-block;
 }
 
-.contactLinks {
-  font-family: Arial;
-  color:rgb(0, 68, 255);
-  padding-left: 50px;
-}
-
 .headerDIV {
   background-color: hsl(0, 0%, 34%);
   width: 100%;
@@ -93,5 +87,22 @@ img {
   text-align: center;
   padding: 10px;
   font-size: 14px;
-  height: 100px;
+}
+
+.footerList {
+  display: inline;
+  background: none;
+}
+
+.contactLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contactLogo:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:hsl(0, 0%, 50%);
 }
