@@ -39,7 +39,7 @@ import slurpJuiceImg from './assets/slurpJuice.png';
 import medkitImg from './assets/medkit.png';
 import bandagesImg from './assets/bandage.png';
 
-// Image import or URL mapping
+// Image import and/or URL mapping
 const lootImages = {
   assaultRifle: assaultRifleImg,
   burstAssaultRifle: burstARImg,
