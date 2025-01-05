@@ -1,6 +1,6 @@
-# Fortnite Loot Pool Maker
+# IdealFN
 
-Welcome to the Fortnite Loot Pool Maker!
+Welcome to IdealFN!
 
 This is an open-source web application intended for Fortnite Battle Royale players.
 
