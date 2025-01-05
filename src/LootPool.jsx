@@ -60,6 +60,7 @@ const lootImages = {
 
   boltAction: boltActionSniperRifleImg,
   huntingRifle: huntingRifleImg,
+  heavySniper: heavySniperImg,
   semiAutoSniper: semiAutoSniperImg,
 
   pistol: pistolImg,
