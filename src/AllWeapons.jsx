@@ -32,7 +32,7 @@ function AllWeapons() {
         }
     };
 
-    // Handle clearing the loot pool
+    // Handle clearing of loot pool
     const handleRemoveClick = () => {
         setAssaultRifle("none");
         setShotgun("none");
@@ -43,6 +43,7 @@ function AllWeapons() {
         setShowImages(false);
     };
 
+    // Function that checks if a selection exists. returns sbooleans only
     const hasSelections = () => {
         return (
             assaultRifle !== "none" ||
