@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LootPool from './LootPool.jsx';  // Make sure you import LootPool
+import LootPool from './LootPool.jsx';
 
 function AllWeapons() {
     const [assaultRifle, setAssaultRifle] = useState("none");
@@ -43,7 +43,7 @@ function AllWeapons() {
         setShowImages(false);
     };
 
-    // Function that checks if a selection exists. returns sbooleans only
+    // Function that checks if a selection exists. returns booleans only
     const hasSelections = () => {
         return (
             assaultRifle !== "none" ||
@@ -69,6 +69,9 @@ function AllWeapons() {
                             <option value="burstAssaultRifle">Burst Assault Rifle</option>
                         </select>
                     </td>
+                    <td>
+                        <button class="tableBtn">+</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Shotguns</td>
@@ -81,6 +84,9 @@ function AllWeapons() {
                             <option value="chargeShotgun">Charge Shotgun</option>
                             <option value="leverActionShotgun">Lever-action Shotgun</option>
                         </select>
+                    </td>
+                    <td>
+                        <button class="tableBtn">+</button>
                     </td>
                 </tr>
                 <tr>
@@ -95,6 +101,9 @@ function AllWeapons() {
                             <option value="combatSMG">Combat SMG</option>
                         </select>
                     </td>
+                    <td>
+                        <button class="tableBtn">+</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Snipers</td>
@@ -107,6 +116,9 @@ function AllWeapons() {
                             <option value="semiAutoSniper">Semi-Auto Sniper</option>
                         </select>
                     </td>
+                    <td>
+                        <button class="tableBtn">+</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Pistols</td>
@@ -117,6 +129,9 @@ function AllWeapons() {
                             <option value="supressedPistol">Supressed Pistol</option>
                             <option value="handCannon">Hand Cannon</option>
                         </select>
+                    </td>
+                    <td>
+                        <button class="tableBtn">+</button>
                     </td>
                 </tr>
                 <tr>
@@ -130,12 +145,14 @@ function AllWeapons() {
                             <option value="bandages">Bandages</option>
                             </select>
                         </td>
+                    <td>
+                        <button class="tableBtn">+</button>
+                    </td>
                 </tr>
-
             </table>
 
             {/* Button to trigger the loot pool display */}
-            <button onClick={handleShowClick}>Create Loot Pool!</button>
+            <button class="bigBtn" onClick={handleShowClick}>Create Loot Pool!</button>
 
             {/* Pass the selected values to LootPool and show/hide images */}
             <LootPool
@@ -150,7 +167,7 @@ function AllWeapons() {
 
             {hasSelections() && (
                 <div>
-                    <button onClick={handleRemoveClick}>Clear</button>
+                    <button class="bigBtn" onClick={handleRemoveClick}>Clear</button>
                 </div>
             )}
         </div>

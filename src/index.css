@@ -42,26 +42,6 @@ td:first-child {
   width: 200px;
 }
 
-button {
-  width: 300px;
-  height: 25px;
-  font-family: "Burbank", sans-serif;
-  border: 1px;
-  display: block;
-  margin: auto;
-  background-color: #f3af19;
-  border-radius: 10px;
-}
-
-button:hover {
-  width: 300px;
-  font-family: "Burbank", sans-serif;
-  border: 1px;
-  display: block;
-  margin: auto;
-  background-color: #ffe368;
-}
-
 select {
   width: 200px;
 }
@@ -127,4 +107,35 @@ img {
   height: 50px;
   border-radius: 50%;
   background-color:hsl(0, 0%, 50%);
+}
+
+.bigBtn {
+  width: 300px;
+  height: 25px;
+  font-family: "Burbank", sans-serif;
+  border: 1px;
+  display: block;
+  margin: auto;
+  border-radius:10px;
+  background-color: #f3af19;
+}
+
+.bigBtn:hover {
+  width: 300px;
+  font-family: "Burbank", sans-serif;
+  border: 1px;
+  display: block;
+  margin: auto;
+  background-color: #ffe368;
+}
+
+.tableBtn {
+  width: 20px;
+  height: 20px;
+  background-color:hsl(0, 0%, 80%);
+  border:1px;
+}
+
+.tableBtn:hover {
+  background-color:hsl(0,0%,70%);
 }
