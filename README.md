@@ -2,7 +2,7 @@
 
 Welcome to IdealFN!
 
-This is an open-source web application intended for Fortnite Battle Royale players.
+This is a web application intended for Fortnite Battle Royale players.
 
 It's to visualise their ideal choices for what guns should and should not be available in Battle Royale.
 
