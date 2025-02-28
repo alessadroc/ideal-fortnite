@@ -70,7 +70,9 @@ function AllWeapons() {
                                         <option key={option} value={option}>
                                             {option
                                                 .replace(/([A-Z])/g, " $1") // Insert space before uppercase letters
+                                                .replace("S M G", "SMG")
                                                 .replace(/^./, (str) => str.toUpperCase())} {/* Capitalize first letter */}
+  
                                         </option>
                                     ))}
                                 </select>
