@@ -7,6 +7,7 @@ import assaultRifleImg from './assets/assaultRifle.png';
 import burstARImg from './assets/burstAR.png';
 import heavyARImg from './assets/heavyAR.png';
 import supressedARImg from './assets/supressedAR.png';
+import holoTwisterImg from './assets/holoTwister.png';
 
 // Shotties
 import pumpShotgunImg from './assets/pumpShotgun.png';
@@ -14,6 +15,8 @@ import tacticalShotgunImg from './assets/tacticalShotgun.png';
 import combatShotgunImg from './assets/combatShotgun.png';
 import chargeShotgunImg from './assets/chargeShotgun.png';
 import leverActionShotgunImg from './assets/leverActionShotgun.png';
+import havocShotgunImg from './assets/havocShotgun.png';
+import sentinelShotgunImg from './assets/sentinelShotgun.png';
 
 // SMGs
 import tacticalSMGImg from './assets/tacticalSubmachinegun.png';
@@ -38,6 +41,7 @@ import shieldPotionImg from './assets/shieldPotion.png';
 import slurpJuiceImg from './assets/slurpJuice.png';
 import medkitImg from './assets/medkit.png';
 import bandagesImg from './assets/bandage.png';
+import smallShieldImg from './assets/smallShield.png';
 
 // Image import and/or URL mapping
 const lootImages = {
@@ -45,12 +49,15 @@ const lootImages = {
   burstAssaultRifle: burstARImg,
   heavyAssaultRifle: heavyARImg,
   supressedAssaultRifle: supressedARImg,
+  holoTwister: holoTwisterImg,
 
   pumpShotgun: pumpShotgunImg,
   tacticalShotgun: tacticalShotgunImg,
   combatShotgun: combatShotgunImg,
   chargeShotgun: chargeShotgunImg,
   leverActionShotgun: leverActionShotgunImg,
+  sentinelShotgun: sentinelShotgunImg,
+  havocShotgun: havocShotgunImg,
 
   tacticalSMG: tacticalSMGImg,
   combatSMG: combatSMGImg,
@@ -71,30 +78,20 @@ const lootImages = {
   slurpJuice: slurpJuiceImg,
   medkit: medkitImg,
   bandages: bandagesImg,
+  smallShield: smallShieldImg,
 
-  none: null,
+  none: null, //# very important for handling null values
 };
 
-function LootPool({
-  assaultRifle,
-  shotgun,
-  submachineGun,
-  sniper,
-  pistol,
-  consumable,
-  showImages,
-}) {
+function LootPool({ assaultRifle, shotgun, submachineGun, sniper, pistol, consumable, showImages }) {
   return (
     <>
       {showImages && (
         <div>
-          {/* Conditionally render images based on selected values */}
-          {assaultRifle !== "none" && <img src={lootImages[assaultRifle]} alt="Assault Rifle" />}
-          {shotgun !== "none" && <img src={lootImages[shotgun]} alt="Shotgun" />}
-          {submachineGun !== "none" && <img src={lootImages[submachineGun]} alt="Submachine Gun" />}
-          {sniper !== "none" && <img src={lootImages[sniper]} alt="Sniper" />}
-          {pistol !== "none" && <img src={lootImages[pistol]} alt="Pistol" />}
-          {consumable !== "none" && <img src={lootImages[consumable]} alt="Consumable" />}
+          {/* Conditionally render images for each selected weapon */}
+          {[...assaultRifle, ...shotgun, ...submachineGun, ...sniper, ...pistol, ...consumable].map((weapon, index) =>
+            weapon !== "none" ? <img key={index} src={lootImages[weapon]} alt={weapon} /> : null
+          )}
         </div>
       )}
     </>
