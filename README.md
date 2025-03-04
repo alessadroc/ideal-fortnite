@@ -1,11 +1,24 @@
-# IdealFN
+# Welcome to IdealFN!
 
-Welcome to IdealFN!
+This is a Fortnite customization tool that allows players to visualize what should be in the game - essentially their ideal 'loot pool'.
 
-This is a web application intended for Fortnite Battle Royale players.
+## Features  
+- Select and visualize Fortnite weapons dynamically  
+- Custom UI for efficient loot pool creation  
+- Responsive design  
 
-It's to visualise their ideal choices for what guns should and should not be available in Battle Royale.
+## Tech Stack  
+- **Frontend:** React, JavaScript, CSS  
+- **Backend:** Node.js
 
-Not all items in Fortnite BR have been implemented, and I hope to have every single one of them included. 
+## Development Setup  
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/<yourusername>/IdealFN.git
 
-Thanks!
+2. Navigate directory to IdealFN, then install NPM (JS Package Manager)
+   cd IdealFN
+   npm install
+
+3. Run development server locally. 
+   npm run dev
