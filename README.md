@@ -17,8 +17,10 @@ This is a Fortnite customization tool that allows players to visualize what shou
    git clone https://github.com/<yourusername>/IdealFN.git
 
 2. Navigate directory to IdealFN, then install NPM (JS Package Manager)
+    ```bash
    cd IdealFN
    npm install
 
-3. Run development server locally. 
+3. Run development server locally.
+    ```bash
    npm run dev
