@@ -46,6 +46,10 @@ import medkitImg from './assets/medkit.png';
 import bandagesImg from './assets/bandage.png';
 import smallShieldImg from './assets/smallShield.png';
 import waterSpriteImg from './assets/waterSprite.png';
+import chugSplashImg from './assets/chugSplash.png';
+// Exotics
+import heistedBreacherShotgunImg from './assets/heistedBreacher.png';
+import chiliChugSplashImg from './assets/chiliChugSplash.png'
 
 // Image import and/or URL mapping
 const lootImages = {
@@ -87,17 +91,21 @@ const lootImages = {
   bandages: bandagesImg,
   smallShield: smallShieldImg,
   waterSprite: waterSpriteImg,
+  chugSplash: chugSplashImg,
+
+  heistedBreacherShotgun: heistedBreacherShotgunImg,
+  chiliChugSplash: chiliChugSplashImg,
 
   none: null, //# very important for handling null values
 };
 
-function LootPool({ assaultRifle, shotgun, submachineGun, sniper, pistol, consumable, showImages }) {
+function LootPool({ assaultRifle, shotgun, submachineGun, sniper, pistol, consumable, exotic, showImages }) {
   return (
     <>
       {showImages && (
         <div>
           {/* Conditionally render images for each selected weapon */}
-          {[...assaultRifle, ...shotgun, ...submachineGun, ...sniper, ...pistol, ...consumable].map((weapon, index) =>
+          {[...assaultRifle, ...shotgun, ...submachineGun, ...sniper, ...pistol, ...exotic, ...consumable].map((weapon, index) =>
             weapon !== "none" ? <img key={index} src={lootImages[weapon]} alt={weapon} /> : null
           )}
         </div>

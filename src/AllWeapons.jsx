@@ -7,7 +7,8 @@ const weaponCategories = [
     { name: "submachineGun", label: "Submachine Guns", options: ["submachineGun", "tacticalSMG", "supressedSMG", "stingerSMG", "combatSMG"] },
     { name: "sniper", label: "Snipers", options: ["huntingRifle", "boltAction", "heavySniper", "semiAutoSniper"] },
     { name: "pistol", label: "Pistols", options: ["pistol", "supressedPistol", "handCannon", "mammothPistol"] },
-    { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield", "waterSprite"] },
+    { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield", "waterSprite", "chugSplash"] },
+    { name: "exotic", label: "Exotics", options: ["chiliChugSplash", "heistedBreacherShotgun"] },
 ];
 
 function AllWeapons() {
@@ -18,6 +19,7 @@ function AllWeapons() {
         sniper: ["none"],
         pistol: ["none"],
         consumable: ["none"],
+        exotic: ["none"],
     });
 
     const [showImages, setShowImages] = useState(false);
@@ -50,7 +52,7 @@ function AllWeapons() {
             setShowImages(true);
             setLootPoolCreated(true);
         } else {
-            alert("Please select at least one item before creating the loot pool!");
+            alert("Please select at least one item before creating the loot pool.");
         }
     };
 
@@ -63,6 +65,7 @@ function AllWeapons() {
             sniper: ["none"],
             pistol: ["none"],
             consumable: ["none"],
+            exotic: ["none"],
         });
         setShowImages(false);
         setLootPoolCreated(false);
@@ -86,7 +89,7 @@ function AllWeapons() {
                                             {availableOptions.map((option) => (
                                                 <option key={option} value={option}>
                                                     {option
-                                                        .replace(/([A-Z])/g, " $1") // String processor to turn keys into values e.g. submachineGun = Submachine Gun
+                                                        .replace(/([A-Z])/g, " $1") // String processes keys into values e.g. submachineGun = Submachine Gun
                                                         .replace("S M G", "SMG") // Fix in the case of gun abbreviations
                                                         .replace(/^./, (str) => str.toUpperCase())} {/* Capitalize first letter */}
                                                 </option>
