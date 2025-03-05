@@ -8,6 +8,8 @@ import burstARImg from './assets/burstAR.png';
 import heavyARImg from './assets/heavyAR.png';
 import supressedARImg from './assets/supressedAR.png';
 import holoTwisterImg from './assets/holoTwister.png';
+import strikerClassicImg from './assets/strikerBurstClassic.png';
+import strikerBurstReworkImg from './assets/strikerBurstRework.png';
 
 // Shotties
 import pumpShotgunImg from './assets/pumpShotgun.png';
@@ -35,6 +37,7 @@ import semiAutoSniperImg from './assets/semiAutoSniper.png'
 import pistolImg from "./assets/pistol.png"
 import handCannonImg from "./assets/handCannon.png"
 import supressedPistolImg from "./assets/supressedPistol.png"
+import mammothPistolImg from "./assets/mammothPistol.png";
 
 // Consumables
 import shieldPotionImg from './assets/shieldPotion.png';
@@ -42,6 +45,7 @@ import slurpJuiceImg from './assets/slurpJuice.png';
 import medkitImg from './assets/medkit.png';
 import bandagesImg from './assets/bandage.png';
 import smallShieldImg from './assets/smallShield.png';
+import waterSpriteImg from './assets/waterSprite.png';
 
 // Image import and/or URL mapping
 const lootImages = {
@@ -50,6 +54,8 @@ const lootImages = {
   heavyAssaultRifle: heavyARImg,
   supressedAssaultRifle: supressedARImg,
   holoTwister: holoTwisterImg,
+  strikerBurstClassic: strikerClassicImg,
+  strikerBurstRework: strikerBurstReworkImg,
 
   pumpShotgun: pumpShotgunImg,
   tacticalShotgun: tacticalShotgunImg,
@@ -73,12 +79,14 @@ const lootImages = {
   pistol: pistolImg,
   handCannon: handCannonImg,
   supressedPistol: supressedPistolImg,
+  mammothPistol: mammothPistolImg,
 
   shieldPotion: shieldPotionImg,
   slurpJuice: slurpJuiceImg,
   medkit: medkitImg,
   bandages: bandagesImg,
   smallShield: smallShieldImg,
+  waterSprite: waterSpriteImg,
 
   none: null, //# very important for handling null values
 };

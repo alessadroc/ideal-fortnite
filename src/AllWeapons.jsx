@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import LootPool from './LootPool.jsx';
 
 const weaponCategories = [
-    { name: "assaultRifle", label: "Assault Rifles", options: ["assaultRifle", "supressedAssaultRifle", "heavyAssaultRifle", "burstAssaultRifle", "holoTwister"] },
+    { name: "assaultRifle", label: "Assault Rifles", options: ["assaultRifle", "supressedAssaultRifle", "heavyAssaultRifle", "burstAssaultRifle", "holoTwister", "strikerBurstClassic", "strikerBurstRework"] },
     { name: "shotgun", label: "Shotguns", options: ["pumpShotgun", "tacticalShotgun", "combatShotgun", "chargeShotgun", "leverActionShotgun", "havocShotgun", "sentinelShotgun"] },
     { name: "submachineGun", label: "Submachine Guns", options: ["submachineGun", "tacticalSMG", "supressedSMG", "stingerSMG", "combatSMG"] },
     { name: "sniper", label: "Snipers", options: ["huntingRifle", "boltAction", "heavySniper", "semiAutoSniper"] },
-    { name: "pistol", label: "Pistols", options: ["pistol", "supressedPistol", "handCannon"] },
-    { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield"] },
+    { name: "pistol", label: "Pistols", options: ["pistol", "supressedPistol", "handCannon", "mammothPistol"] },
+    { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield", "waterSprite"] },
 ];
 
 function AllWeapons() {
