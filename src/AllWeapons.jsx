@@ -8,7 +8,7 @@ const weaponCategories = [
     { name: "sniper", label: "Snipers", options: ["huntingRifle", "boltAction", "heavySniper", "semiAutoSniper"] },
     { name: "pistol", label: "Pistols", options: ["pistol", "supressedPistol", "handCannon", "mammothPistol"] },
     { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield", "waterSprite", "chugSplash"] },
-    { name: "exotic", label: "Exotics", options: ["chiliChugSplash", "heistedBreacherShotgun"] },
+    { name: "exotic", label: "Exotics", options: ["chiliChugSplash", "heistedBreacherShotgun", "heistedAccelerantShotgun"] },
 ];
 
 function AllWeapons() {

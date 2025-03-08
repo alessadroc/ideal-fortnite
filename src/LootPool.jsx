@@ -50,6 +50,7 @@ import chugSplashImg from './assets/chugSplash.png';
 // Exotics
 import heistedBreacherShotgunImg from './assets/heistedBreacher.png';
 import chiliChugSplashImg from './assets/chiliChugSplash.png'
+import heistedAccelerantShotgunImg from './assets/heistedAccelerantShotgun.png'
 
 // Image import and/or URL mapping
 const lootImages = {
@@ -95,6 +96,7 @@ const lootImages = {
 
   heistedBreacherShotgun: heistedBreacherShotgunImg,
   chiliChugSplash: chiliChugSplashImg,
+  heistedAccelerantShotgun: heistedAccelerantShotgunImg,
 
   none: null, //# very important for handling null values
 };
