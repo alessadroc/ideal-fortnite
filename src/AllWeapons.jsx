@@ -4,11 +4,12 @@ import LootPool from './LootPool.jsx';
 const weaponCategories = [
     { name: "assaultRifle", label: "Assault Rifles", options: ["assaultRifle", "supressedAssaultRifle", "heavyAssaultRifle", "burstAssaultRifle", "holoTwister", "strikerBurstClassic", "strikerBurstRework"] },
     { name: "shotgun", label: "Shotguns", options: ["pumpShotgun", "tacticalShotgun", "combatShotgun", "chargeShotgun", "leverActionShotgun", "havocShotgun", "sentinelShotgun"] },
-    { name: "submachineGun", label: "Submachine Guns", options: ["submachineGun", "tacticalSMG", "supressedSMG", "stingerSMG", "combatSMG"] },
+    { name: "submachineGun", label: "Submachine Guns", options: ["submachineGun", "tacticalSMG", "supressedSMG", "stingerSMG", "combatSMG", "twinMagSMG"] },
     { name: "sniper", label: "Snipers", options: ["huntingRifle", "boltAction", "heavySniper", "semiAutoSniper"] },
     { name: "pistol", label: "Pistols", options: ["pistol", "supressedPistol", "handCannon", "mammothPistol"] },
-    { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield", "waterSprite", "chugSplash"] },
-    { name: "exotic", label: "Exotics", options: ["chiliChugSplash", "heistedBreacherShotgun", "heistedAccelerantShotgun"] },
+    { name: "exotic", label: "Exotics", options: ["chiliChugSplash", "heistedBreacherShotgun", "heistedAccelerantShotgun", "heistedBlinkMag"]},
+    { name: "movement", label: "Movement", options: ["grappler", "theKneecapper", "voidOniMask"]},
+    { name: "consumable", label: "Consumables", options: ["shieldPotion", "slurpJuice", "medkit", "bandages", "smallShield", "waterSprite", "chugSplash"] }
 ];
 
 function AllWeapons() {
@@ -18,8 +19,9 @@ function AllWeapons() {
         submachineGun: ["none"],
         sniper: ["none"],
         pistol: ["none"],
-        consumable: ["none"],
         exotic: ["none"],
+        movement: ["none"],
+        consumable: ["none"]
     });
 
     const [showImages, setShowImages] = useState(false);
@@ -66,6 +68,7 @@ function AllWeapons() {
             pistol: ["none"],
             consumable: ["none"],
             exotic: ["none"],
+            movement: ["none"]
         });
         setShowImages(false);
         setLootPoolCreated(false);
