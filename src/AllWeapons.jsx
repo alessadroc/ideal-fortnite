@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LootPool from './LootPool.jsx';
+import Item from './Item.jsx';
 
 const weaponCategories = [
     { name: "assaultRifle", label: "Assault Rifles", options: ["assaultRifle", "supressedAssaultRifle", "heavyAssaultRifle", "burstAssaultRifle", "holoTwister", "strikerBurstClassic", "strikerBurstRework"] },
