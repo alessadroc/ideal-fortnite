@@ -5,10 +5,10 @@ const imageContext = import.meta.glob("./assets/*.png", { eager: true });
 
 const lootImages = {};
 
-// Process each imported image
+// Process each imported image, giving its assigned name
 Object.entries(imageContext).forEach(([path, module]) => {
   const imageName = path.replace("./assets/", "").replace(".png", ""); // Extract filename
-  lootImages[imageName] = module.default; // Assign image path
+  lootImages[imageName] = module.default; // Assign the image path
 });
 
 function LootPool({ assaultRifle, shotgun, submachineGun, sniper, pistol, consumable, exotic, movement, showImages }) {
