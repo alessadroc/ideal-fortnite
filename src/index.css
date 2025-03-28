@@ -144,13 +144,10 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
   transform: translate(-50%, -50%);
 
   border-radius: 10px;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
-  padding: 20px;
-  margin: 20px;
 
   display: inline-block;
   justify-content: center;
@@ -159,9 +156,9 @@ img {
 
 .popup-inner {
   position: relative;
-  padding: 30px;
   width: 100%;
   max-width: 500px;
+  padding: 20px;
   background-color: hsl(0, 0%, 100%);
 }
 
