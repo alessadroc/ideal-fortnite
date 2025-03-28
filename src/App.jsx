@@ -22,8 +22,6 @@ function App() {
       <Header></Header>
       <AllWeapons></AllWeapons>
       <LootPool></LootPool>
-      <Item source="./assets/assaultRifle.png" onClick={togglePopup}></Item>
-      <Popup trigger={popupVisible} closePopup={togglePopup}><Rarities></Rarities></Popup>
       <Footer></Footer>
     </div>
   )
