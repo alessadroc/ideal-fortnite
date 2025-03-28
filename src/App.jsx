@@ -4,6 +4,7 @@ import AllWeapons from "./AllWeapons.jsx"
 import LootPool from "./LootPool.jsx"
 import Popup from "./Popup.jsx"
 import Item from "./Item.jsx"
+import Rarities from "./Rarities.jsx"
 import {useState} from 'react';
 
 {/*Experimenting with popup*/}
@@ -22,7 +23,7 @@ function App() {
       <AllWeapons></AllWeapons>
       <LootPool></LootPool>
       <Item source="./assets/assaultRifle.png" onClick={togglePopup}></Item>
-      <Popup trigger={popupVisible} closePopup={togglePopup}><p>Popup Success!</p></Popup>
+      <Popup trigger={popupVisible} closePopup={togglePopup}><Rarities></Rarities></Popup>
       <Footer></Footer>
     </div>
   )
