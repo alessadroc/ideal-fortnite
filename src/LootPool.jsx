@@ -29,7 +29,7 @@ function LootPool({
           {[...assaultRifle, ...shotgun, ...submachineGun, ...sniper, ...pistol, ...consumable, ...exotic, ...movement]
             .filter((weapon) => weapon !== "none") // Remove "none" selections
             .map((weapon, index) => (
-              <Item key={index} source={lootImages[weapon]} onClick={() => onItemClick?.(weapon)}/>
+              <Item key={index} source={lootImages[weapon]}/>
             ))}
         </div>
       )}

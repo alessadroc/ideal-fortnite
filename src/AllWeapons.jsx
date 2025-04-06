@@ -95,7 +95,7 @@ function AllWeapons() {
                                                     {option
                                                         .replace(/([A-Z])/g, " $1") // String processes keys into values e.g. submachineGun = Submachine Gun
                                                         .replace("S M G", "SMG") // Fix in the case of gun abbreviations
-                                                        .replace(/^./, (str) => str.toUpperCase())} {/* Capitalize first letter */}
+                                                        .replace(/^./, (str) => str.toUpperCase())} {/* Capitalise first letter */}
                                                 </option>
                                             ))}
                                         </select>
